@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add founds
+{% endblock %}
+
+{% block main %}
+
+    <form action="/addfounds" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="founds" placeholder="$(USD)" type="text" pattern="[0-9]+"
+             title="Just numbers!" required>
+        </div>
+
+        <button class ="btn btn-primary" type="submit">Add founds!</button>
+
+
+    </form>
+{% endblock %}
